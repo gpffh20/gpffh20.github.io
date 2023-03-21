@@ -5,6 +5,18 @@
 	height: 100vh;
 }
 
+.menubar {
+	display: inline;
+}
+
+ul {
+	list-style-type: disc;
+}
+
+li {
+	text-align: -webkit-match-parent;
+}
+
 .intro {
 	display: flex;
 	flex-direction: column;
@@ -31,6 +43,7 @@
 
 .profile img{
 	border-radius: 100%;
+	box-shadow: 0px 0px 25px #000;
 	margin-top: 5rem;
 }
 
@@ -60,7 +73,7 @@
 
 .intro_box {
 	width: 50rem;
-	height: 30rem;
+	height: 0rem;
 	font-family: 'Sono', sans-serif;
 	color: #fff;
 	font-size: 2rem;
@@ -73,10 +86,27 @@
 	padding: 5rem;
 }
 
-.like_it {
+.like_it {	
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
-	height: 30vh;
-	background-color: #00f;
+	height: 100vh;
+	background-color: #e0d665;
+	background-size: cover;
+	text-align: center;
+	position: absolute;
+}
+
+.dev img {
+	border-radius: 100%;
+}
+
+.baseball img {
+	border-radius: 100%;
+}
+
+.trip img {
+	border-radius: 100%;
 }
 
 .contact {

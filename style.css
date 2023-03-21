@@ -1,5 +1,53 @@
-.intro{
-    width: 100vh;
-    height: 50rem;
-    background-color: red;
+@import "reset.css";
+
+.big_container {
+	width: 100%;
+	height: 100vh;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100vh;
+	background-color: #e0d665;
+	background-size: cover;
+	text-align: center;
+}
+
+.intro h1 {
+	font-family: 'Sono', sans-serif;
+	color: #fff;
+	font-size: 3rem;
+	margin-top: 15rem;
+} 
+
+.intro h2 {
+	font-family: 'Sono', sans-serif;
+	color: #fff;
+	font-size: 2rem;
+	margin-top: 0.5rem;
+}
+
+.profile img{
+	border-radius: 100%;
+	margin-top: 5rem;
+}
+
+.about_me {
+	width: 100%;
+	height: 30vh;
+	background-color: #ff8cff;
+}
+
+.like_it {
+	width: 100%;
+	height: 30vh;
+	background-color: #00f;
+}
+
+.contact {
+	width: 100%;
+	height: 30vh;
+	background-color: #ff8cff;
 }

@@ -35,9 +35,42 @@
 }
 
 .about_me {
+	display: flex;
 	width: 100%;
-	height: 30vh;
-	background-color: #ff8cff;
+	height: 100vh;
+	background-color: #508bf2;
+	background-size: cover;
+	text-align: center;
+}
+
+.about_me img {
+	border-radius: 20%;
+	margin-top: 25rem;
+	margin-left: 10rem;
+}
+
+.introduction {
+	font-family: 'Sono', sans-serif;
+	color: #fff;
+	font-size: 2rem;
+	margin-top: 25rem;
+	margin-left: 10rem;
+
+}
+
+.intro_box {
+	width: 50rem;
+	height: 30rem;
+	font-family: 'Sono', sans-serif;
+	color: #fff;
+	font-size: 2rem;
+	margin-top: 25rem;
+	margin-left: 10rem;
+	text-align: left;
+	margin-right: 3rem;
+	border: 0.5rem solid #000;
+	border-radius: 20%;
+	padding: 5rem;
 }
 
 .like_it {

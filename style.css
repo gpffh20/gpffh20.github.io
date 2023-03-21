@@ -3,18 +3,35 @@
 .big_container {
 	width: 100%;
 	height: 100vh;
-}
-
-.menubar {
-	display: inline;
+  background-color: #e0d665;
 }
 
 ul {
-	list-style-type: disc;
+margin: 0;
+padding: 0;
+display: flex;
+flex-flow: row nowrap;
+justify-content: space-evenly;
 }
 
 li {
-	text-align: -webkit-match-parent;
+  list-style-type: disc;
+  text-decoration: none;
+}
+
+a {
+  display: block;
+  padding: 6rem 8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Sono', sans-serif;
+  font-size: 2rem;
+}
+
+a:hover {
+  color: #000;
 }
 
 .intro {
@@ -30,21 +47,21 @@ li {
 .intro h1 {
 	font-family: 'Sono', sans-serif;
 	color: #fff;
-	font-size: 3rem;
-	margin-top: 15rem;
+	font-size: 4rem;
+	margin-top: 5rem;
 } 
 
 .intro h2 {
 	font-family: 'Sono', sans-serif;
 	color: #fff;
 	font-size: 2rem;
-	margin-top: 0.5rem;
+	margin-top: 2rem;
 }
 
 .profile img{
 	border-radius: 100%;
 	box-shadow: 0px 0px 25px #000;
-	margin-top: 5rem;
+	margin-top: 8rem;
 }
 
 .about_me {

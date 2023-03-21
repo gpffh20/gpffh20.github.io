@@ -7,35 +7,35 @@
 }
 
 ul {
-margin: 0;
-padding: 0;
-display: flex;
-flex-flow: row nowrap;
-justify-content: space-evenly;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
 }
 
 li {
   list-style-type: disc;
-  text-decoration: none;
 }
 
 a {
   display: block;
   padding: 6rem 8rem;
   text-transform: uppercase;
-  text-decoration: none;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   font-family: 'Sono', sans-serif;
   font-size: 2rem;
 }
 
 a:hover {
-  color: #000;
+  color: #fff;
 }
 
 .intro {
 	display: flex;
+  flex-wrap: wrap;
 	flex-direction: column;
 	width: 100%;
 	height: 100vh;
@@ -63,55 +63,70 @@ a:hover {
 	box-shadow: 0px 0px 25px #000;
 	margin-top: 8rem;
 }
-
+/* ========================================================== */
 .about_me {
 	display: flex;
+  flex-wrap: wrap;
 	width: 100%;
 	height: 100vh;
+  justify-content: center;
 	background-color: #508bf2;
 	background-size: cover;
-	text-align: center;
 }
 
 .about_me img {
-	border-radius: 20%;
-	margin-top: 25rem;
-	margin-left: 10rem;
+	margin-top: 20rem;
+  margin-left: 10rem;
 }
 
 .introduction {
-	font-family: 'Sono', sans-serif;
-	color: #fff;
-	font-size: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 	margin-top: 25rem;
 	margin-left: 10rem;
 
 }
 
-.intro_box {
-	width: 50rem;
-	height: 0rem;
-	font-family: 'Sono', sans-serif;
+.title {
+  font-family: 'Sono', sans-serif;
+  color: #000;
+  font-size: 4rem;
+  margin-top: -5rem;
+
+}
+
+.text {
+  font-family: 'Sono', sans-serif;
+	color: #fff;
+	font-size: 1.5rem;
+	margin-top: 2rem;
+  line-height: 3rem;
+}
+
+.info {
+  font-family: 'Sono', sans-serif;
 	color: #fff;
 	font-size: 2rem;
-	margin-top: 25rem;
-	margin-left: 10rem;
-	text-align: left;
-	margin-right: 3rem;
-	border: 0.5rem solid #000;
-	border-radius: 20%;
-	padding: 5rem;
+	margin-top: 2rem;
+  padding: 1.3rem;
+  background-color: #ff8cff;
+  border: 0.5rem solid #000;
+  line-height: 2.5rem;
 }
+
+/* ================================================= */
 
 .like_it {	
 	display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
 	justify-content: space-between;
 	width: 100%;
 	height: 100vh;
 	background-color: #e0d665;
 	background-size: cover;
 	text-align: center;
-	position: absolute;
 }
 
 .dev img {
@@ -126,8 +141,4 @@ a:hover {
 	border-radius: 100%;
 }
 
-.contact {
-	width: 100%;
-	height: 30vh;
-	background-color: #ff8cff;
-}
+/* ======================================== */

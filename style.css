@@ -1,7 +1,7 @@
 @import "reset.css";
 
 .big_container {
-	width: 100%;
+	width: 100vw;
 	height: 100vh;
   background-color: #2e7d31;
 }
@@ -13,18 +13,15 @@ ul {
 	justify-content: space-evenly;
 }
 
-li {
-  list-style-type: disc;
-}
-
 a {
+  text-decoration: none;
   display: block;
-  padding: 6rem 8rem;
+  padding: 4rem 6rem;
   text-transform: uppercase;
   font-weight: bold;
   color: #e0d665;
   font-family: 'Sono', sans-serif;
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 a:hover {
@@ -32,8 +29,8 @@ a:hover {
 }
 
 .intro {
+  overflow: hidden;
 	display: flex;
-  flex-wrap: wrap;
 	flex-direction: column;
 	width: 100%;
 	height: 100vh;
@@ -45,31 +42,32 @@ a:hover {
 .intro h1 {
 	font-family: 'Sono', sans-serif;
 	color: #fff;
-	font-size: 4rem;
-	margin-top: 5rem;
+	font-size: 3rem;
+	margin-top: 2rem;
 } 
 
 .intro h2 {
 	font-family: 'Sono', sans-serif;
 	color: #fff;
-	font-size: 2rem;
-	margin-top: 2rem;
+	font-size: 1.8rem;
+	margin-top: 1rem;
 }
 
 .profile img{
+  flex-direction: column;
 	border-radius: 100%;
 	box-shadow: 0px 0px 25px #e0d665;
-	margin-top: 8rem;
+	margin-top: 4rem;
 }
 
 .about_me {
+  overflow: hidden;
 	display: flex;
-  flex-wrap: wrap;
 	width: 100%;
 	height: 100vh;
-  justify-content: center;
 	background-color: #DFD981;
 	background-size: cover;
+  padding: auto;
 }
 
 .about_me img {
@@ -77,49 +75,48 @@ a:hover {
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
-	margin-top: 19rem;
+	margin: 4rem 0rem 0rem 4rem;
 }
 
 .introduction {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-	margin-top: 25rem;
-	margin-left: 10rem;
-
+	margin-top: 5rem;
+	margin-left: 3rem;
 }
 
 .title {
   font-family: 'Sono', sans-serif;
   color: #714737;
-  font-size: 4rem;
-  margin-top: -5rem;
+  font-size: 3rem;
+  margin-top: 1rem;
 }
 
 .text {
   font-family: 'Do Hyeon', sans-serif;
 	color: #000;
-	font-size: 1.5rem;
+	font-size: 1.3em;
 	margin-top: 2rem;
-  line-height: 3rem;
+  line-height: 2rem;
 }
 
 .info {
   font-family: 'Do Hyeon', sans-serif;
 	color: #000;
-	font-size: 1.5rem;
-	margin-top: 2rem;
-  padding: 1.5rem 4rem 1.5rem 1rem;
+	font-size: 1.3rem;
+	margin-top: 1rem;
+  padding: 1rem 3rem 1rem 0.5rem;
   background-color: #a4af69;
-  border: 0.3rem solid #714737;
-  line-height: 2.8rem;
+  border: 0.1rem solid #714737;
+  line-height: 2rem;
 }
 
 .like_it {	
 	display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
-  gap: 15rem;
+  flex-direction: column;
+  gap: 5rem;
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
@@ -132,13 +129,15 @@ a:hover {
 .like_title {
   font-family: 'Sono', sans-serif;
   color: #fff;
-  font-size: 4rem;
-  margin-top: 0rem;
+  font-size: 3rem;
+  margin-top: 3rem;
 }
 
 .icon {
   display: flex;
-  gap: 15rem;
+  flex-wrap: wrap;
+  /* align-items: center; */
+  gap: 5rem;
 }
 
 .dev img {
@@ -177,21 +176,21 @@ a:hover {
   font-family: 'Sono', sans-serif;
   color: #714737;
   font-size: 4rem;
+  margin-top: 3.5rem;
 }
 
 .background img {
-  margin: 5rem 0rem 0rem 0rem;
+  margin: 2rem 0rem 2rem 0rem;
   align-items: center;
 }
 
 .sns {
   display: flex;
-  gap: 9rem;
-  margin-top: 10rem;
+  gap: 5rem;
 }
 
 .sns h1 {
   margin: 0.9rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: 'Sono', sans-serif;
 }

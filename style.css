@@ -3,12 +3,10 @@
 .big_container {
 	width: 100%;
 	height: 100vh;
-  background-color: #e0d665;
+  background-color: #2e7d31;
 }
 
 ul {
-	margin: 0;
-	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
 	flex-flow: row nowrap;
@@ -24,7 +22,7 @@ a {
   padding: 6rem 8rem;
   text-transform: uppercase;
   font-weight: bold;
-  color: #000;
+  color: #e0d665;
   font-family: 'Sono', sans-serif;
   font-size: 2rem;
 }
@@ -39,7 +37,7 @@ a:hover {
 	flex-direction: column;
 	width: 100%;
 	height: 100vh;
-	background-color: #e0d665;
+	background-color: #2e7d31;
 	background-size: cover;
 	text-align: center;
 }
@@ -60,7 +58,7 @@ a:hover {
 
 .profile img{
 	border-radius: 100%;
-	box-shadow: 0px 0px 25px #000;
+	box-shadow: 0px 0px 25px #e0d665;
 	margin-top: 8rem;
 }
 
@@ -70,13 +68,16 @@ a:hover {
 	width: 100%;
 	height: 100vh;
   justify-content: center;
-	background-color: #508bf2;
+	background-color: #DFD981;
 	background-size: cover;
 }
 
 .about_me img {
-	margin-top: 20rem;
-  margin-left: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+	margin-top: 19rem;
 }
 
 .introduction {
@@ -90,28 +91,28 @@ a:hover {
 
 .title {
   font-family: 'Sono', sans-serif;
-  color: #000;
+  color: #714737;
   font-size: 4rem;
   margin-top: -5rem;
 }
 
 .text {
-  font-family: 'Sono', sans-serif;
-	color: #fff;
+  font-family: 'Do Hyeon', sans-serif;
+	color: #000;
 	font-size: 1.5rem;
 	margin-top: 2rem;
   line-height: 3rem;
 }
 
 .info {
-  font-family: 'Sono', sans-serif;
-	color: #fff;
-	font-size: 2rem;
+  font-family: 'Do Hyeon', sans-serif;
+	color: #000;
+	font-size: 1.5rem;
 	margin-top: 2rem;
-  padding: 1.3rem;
-  background-color: #ff8cff;
-  border: 0.5rem solid #000;
-  line-height: 2.5rem;
+  padding: 1.5rem 4rem 1.5rem 1rem;
+  background-color: #a4af69;
+  border: 0.3rem solid #714737;
+  line-height: 2.8rem;
 }
 
 .like_it {	
@@ -122,7 +123,7 @@ a:hover {
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
-	background-color: #e0d665;
+	background-color: #2e7d31;
 	background-size: cover;
 	text-align: center;
   align-items: center;
@@ -130,7 +131,7 @@ a:hover {
 
 .like_title {
   font-family: 'Sono', sans-serif;
-  color: #000;
+  color: #fff;
   font-size: 4rem;
   margin-top: 0rem;
 }
@@ -141,20 +142,20 @@ a:hover {
 }
 
 .dev img {
-  background-color: #fff;
+  border: 0.3rem solid #DFD981;
 }
 
 .baseball img {
-  background-color: #fff;
+  border: 0.3rem solid #DFD981;
 }
 
 .trip img {
-  background-color: #fff;
+  border: 0.3rem solid #DFD981;
 }
 
 .like_it h1 {
-  font-family: 'Sono', sans-serif;
-  color: #000;
+  font-family: 'Do Hyeon', sans-serif;
+  color: #fff;
   font-size: 2rem;
   margin-top: 5rem;
 }
@@ -166,7 +167,7 @@ a:hover {
 	width: 100%;
 	height: 100vh;
   justify-content: center;
-	background-color: #508bf2;
+	background-color: #DFD981;
 	background-size: cover;
   text-align: center;
   align-items: center; 
@@ -174,19 +175,19 @@ a:hover {
 
 .contact_me {
   font-family: 'Sono', sans-serif;
-  color: #000;
+  color: #714737;
   font-size: 4rem;
-  margin-top: 0rem;
 }
 
 .background img {
-  margin: 10rem;
+  margin: 5rem 0rem 0rem 0rem;
   align-items: center;
 }
 
 .sns {
   display: flex;
-  gap: 6rem;
+  gap: 9rem;
+  margin-top: 10rem;
 }
 
 .sns h1 {

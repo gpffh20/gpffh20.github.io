@@ -39,7 +39,7 @@ def layout(title, description, body, page='', nav=None):
     return f'''<!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{escape(title)}</title><meta name="description" content="{escape(description)}">
-<meta name="theme-color" content="#f0f3ed"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR">
+<meta name="theme-color" content="#f9f9f9"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="{escape(title)}"><meta property="og:description" content="{escape(description)}"><meta property="og:url" content="{ORIGIN}/{page}">
 <link rel="canonical" href="{ORIGIN}/{page}"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="preload" href="/assets/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/styles.css?v={CSS_VERSION}"><script src="/site.js?v={JS_VERSION}" defer></script></head>
 <body><a class="skip" href="#main">본문으로 건너뛰기</a>

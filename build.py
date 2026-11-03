@@ -5,6 +5,7 @@ import hashlib
 
 DIST = Path(__file__).parent
 CSS_VERSION = hashlib.sha256((DIST / 'styles.css').read_bytes()).hexdigest()[:10]
+JS_VERSION = hashlib.sha256((DIST / 'site.js').read_bytes()).hexdigest()[:10]
 ORIGIN = 'https://gpffh20.github.io'
 GITHUB = 'https://github.com/gpffh20'
 UTTERAI = 'https://github.com/UtterAI-aws13/UtterAI_Infra/tree/eunyoung/infra-lab'
@@ -33,17 +34,17 @@ def flow(*items):
 
 def layout(title, description, body, page='', nav=None):
     is_home = not page
-    links=''.join(f'<a href="{"" if is_home else "/"}#{id}">{label}</a>' for id,label in [('projects','Projects'),('experience','Experience'),('education','Education'),('skills','Skills')])
+    links=''.join(f'<li><a href="{"" if is_home else "/"}#{id}"><span class="full">{label}</span><span class="short">{short}</span></a></li>' for id,label,short in [('experience','Professional Experience','Exp'),('projects','Projects','Prj'),('education','Education','Edu'),('skills','Skills','Skills')])
     toc = '' if is_home or not nav else '<nav class="article-nav" aria-label="프로젝트 목차">'+''.join(f'<a href="#{id}">{label}</a>' for id,label in nav)+'</nav>'
     return f'''<!doctype html>
 <html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{escape(title)}</title><meta name="description" content="{escape(description)}">
 <meta name="theme-color" content="#f0f3ed"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="{escape(title)}"><meta property="og:description" content="{escape(description)}"><meta property="og:url" content="{ORIGIN}/{page}">
-<link rel="canonical" href="{ORIGIN}/{page}"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="preload" href="/assets/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/styles.css?v={CSS_VERSION}"><script src="/site.js" defer></script></head>
+<link rel="canonical" href="{ORIGIN}/{page}"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="preload" href="/assets/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/styles.css?v={CSS_VERSION}"><script src="/site.js?v={JS_VERSION}" defer></script></head>
 <body><a class="skip" href="#main">본문으로 건너뛰기</a>
-<header class="site-header"><div class="nav-wrap"><a class="brand" href="/" aria-label="신은영 포트폴리오 홈">Eunice Shin<span> · DevOps Engineer</span></a><nav class="main-nav" aria-label="메인 메뉴">{links}</nav></div></header>
-<main class="main {"home" if is_home else "article"}" id="main">{toc}{body}<footer class="footer"><span>© 2026 신은영 · Eunice Shin</span><div><a href="/assets/eunice-shin-resume.pdf" download="신은영_이력서.pdf">이력서 PDF ↓</a><a href="#main">맨 위로 ↑</a></div></footer></main>
+<nav class="site-header" aria-label="메인 메뉴"><div class="wrap"><a class="logo" href="/" aria-label="신은영 포트폴리오 홈">Eunice Shin <span class="sub">· DevOps Engineer</span></a><ul class="main-nav">{links}</ul></div></nav>
+<main class="wrap main {"home" if is_home else "article"}" id="main">{toc}{body}<footer class="footer"><span>© 2026 신은영 · Eunice Shin</span><div><a href="/assets/eunice-shin-resume.pdf" download="신은영_이력서.pdf">이력서 PDF ↓</a><a href="#main">맨 위로 ↑</a></div></footer></main>
 <dialog class="lightbox" id="image-dialog" aria-label="이미지 확대 보기"><button type="button" class="lightbox-close" aria-label="이미지 닫기">닫기 ×</button><img alt=""></dialog>
 </body></html>'''
 

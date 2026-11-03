@@ -1,80 +1,48 @@
-<header class="hero" id="about">
-  <div class="profile">
-    <div class="photo"><img src="/assets/portrait.png" alt="신은영 프로필 사진" width="413" height="531"></div>
-    <div class="profile-text">
-      <h1>안녕하세요,<br><span class="role">데브옵스 엔지니어</span> 신은영입니다</h1>
-      <ul class="contact">
-        <li><a href="mailto:eunice.shin54@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg><span>eunice.shin54@gmail.com</span></a></li>
-        <li><a href="https://github.com/gpffh20" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.87c-2.78.61-3.37-1.18-3.37-1.18-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg><span>github.com/gpffh20</span></a></li>
-        <li><a href="https://www.linkedin.com/in/s-eunice/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 2H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2ZM8 19H5V9h3ZM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4ZM19 19h-3v-5.3c0-1.4-.4-2.1-1.5-2.1S13 12.3 13 13.7V19h-3V9h3v1.4A3.3 3.3 0 0 1 16 8.8c2.2 0 3 1.5 3 4.2Z"/></svg><span>linkedin.com/in/s-eunice</span></a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="intro">
-    <p>문제의 원인을 추적하고, 운영 구조를 개선하는 데브옵스 엔지니어입니다.</p>
-    <p>EKS 기반 AI 서비스에서 <span class="hl">로그와 설정으로 네트워크 장애를 진단</span>하고, 큐 기반 오토스케일링으로 EC2 Compute 일비용을 약 58% 절감했습니다. 인프라를 코드로 관리하며 <span class="hl">배포 이후의 실행 결과까지 검증하는 것</span>을 중요하게 생각합니다.</p>
-  </div>
-  <div class="document-links"><a class="ext-link" href="/assets/eunice-shin-resume.pdf" download="신은영_이력서.pdf">이력서 PDF ↓</a><a class="ext-link" href="/assets/eunice-shin-portfolio.pdf" download="신은영_포트폴리오.pdf">포트폴리오 PDF ↓</a></div>
+<header class="hero">
+  <p class="eyebrow">DEVOPS / TECHNICAL CASE STUDY</p>
+  <h1>UtterAI</h1>
+  <p class="hero-subtitle">AI 기반 언어치료 임상 어시스턴트</p>
+  <p class="hero-description">EKS 기반 AI 파이프라인을 구축하며 마주한 네트워크 장애, 자원·비용 문제, 운영 대응 흐름을 개선한 기록입니다.</p>
+  <div class="project-meta"><span>2026.05 – 2026.07</span><span>4인 팀</span><span>신은영 · Team Lead / DevOps Engineer</span></div>
+  <div class="award">AWS Cloud School 최종 프로젝트 최우수상</div>
+  <div class="hero-links"><a href="https://github.com/UtterAI-aws13/UtterAI_Infra/tree/eunyoung/infra-lab" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://youtu.be/4a5bOTO9fbY" target="_blank" rel="noopener noreferrer">서비스 데모 ↗</a><a href="/assets/eunice-shin-portfolio.pdf" download="신은영_UtterAI_포트폴리오.pdf">포트폴리오 PDF ↓</a></div>
+  <div class="summary-metrics"><a href="#scaling"><strong>약 58% ↓</strong><span>EC2 Compute 일비용</span></a><a href="#chatops"><strong>6초 이내</strong><span>장애 원인 배포 커밋 표시</span></a><a href="#chatops"><strong>33초</strong><span>롤백 merge 후 복구 여부 확인</span></a></div>
 </header>
 
-<section id="experience">
-  <h2>Professional Experience</h2>
-  <div class="exp-item"><div class="exp-period">2025.02 – 2025.12</div><div><h3>Outlier</h3><div class="team">AI Trainer / Contributor · Remote (Canada) · Contract</div><ul><li><strong>Python·C/C++ 및 알고리즘</strong> 분야 AI 응답의 기술적 정확성·요구사항 충족 여부·코드 품질 평가</li><li>프로젝트별 기준에 따라 <strong>AI 모델 응답 비교 분석</strong> 및 기술적 피드백 작성</li><li>프로그래밍·알고리즘 관련 기술 문항·정답 작성, AI 생성 코드의 실행 결과 검증</li></ul></div></div>
-  <div class="exp-item"><div class="exp-period">2024.06 – 2024.10</div><div><h3>SmartCC</h3><div class="team">5인 창업팀 · Backend</div><p class="award-note">이노베이션 아카데미 창업대회 대상 (과기정통부 장관상)</p><ul><li>청각장애인을 위한 비음성 자막 생성 AI 캡셔닝 서비스 개발</li><li>Flask 기반 REST API 및 <strong>Whisper 오디오 처리 → 텍스트 변환 파이프라인</strong> 구현</li><li><strong>141만 구독자 유튜버와 파일럿 계약 체결</strong> 및 고객 수요 검증</li></ul></div></div>
+<section class="document-section" id="overview">
+  <div class="section-heading"><p class="eyebrow">PROJECT OVERVIEW</p><h2>어떤 서비스이고, 무엇을 담당했는가</h2></div>
+  <p>언어재활사가 치료 세션 녹음을 업로드하면, 발화자를 구분한 전사문과 언어지표를 분석하고 SOAP 형식의 치료 기록 초안을 생성합니다. 치료사는 분석 결과와 초안을 검토·수정해 치료 기록을 완성합니다.</p>
+  <ol class="service-flow" aria-label="서비스 처리 흐름"><li><span>01</span>치료 녹음 업로드</li><li><span>02</span>전사·언어지표 분석</li><li><span>03</span>SOAP 초안 생성</li><li><span>04</span>치료사 검토·수정</li></ol>
+  <h3>내 담당 범위</h3>
+  <dl class="role-list"><div><dt>인프라·네트워크</dt><dd>EKS 네트워크 장애 진단, Custom Networking 적용과 Node·Pod 주소 영역 분리</dd></div><div><dt>자원·비용</dt><dd>SQS 기반 KEDA·Karpenter 오토스케일링, Base·Burst 배치 정책과 Spot 중단 대응</dd></div><div><dt>배포·운영</dt><dd>dev/prod GitOps 배포, Slack ChatOps 기반 원인 배포 식별·승인형 롤백·복구 검증</dd></div><div><dt>팀 리드</dt><dd>업무 분장·일일 회의·일정 관리, 진행 지연 원인 해결과 기술적 의사결정 지원</dd></div></dl>
+  <p class="scope-note">전체 구성도는 서비스의 시스템 구성을 보여주며, 아래 사례는 직접 담당한 문제 해결과 검증 과정을 중심으로 정리했습니다.</p>
+  <div class="tech-stack" aria-label="주요 기술"><span>AWS EKS</span><span>Terraform</span><span>SQS</span><span>KEDA</span><span>Karpenter</span><span>Argo CD</span><span>Prometheus · Grafana</span><span>LiteLLM</span></div>
 </section>
 
-<section id="projects">
-  <h2>Projects</h2>
-  <div class="tablist" role="tablist" aria-label="프로젝트 선택">
-    <button class="tab" role="tab" id="tab-utterai" aria-controls="panel-utterai" aria-selected="true">UtterAI</button>
-    <button class="tab" role="tab" id="tab-migration" aria-controls="panel-migration" aria-selected="false">코로의 이사</button>
-    <button class="tab" role="tab" id="tab-disasterkok" aria-controls="panel-disasterkok" aria-selected="false">재난콕</button>
-  </div>
-
-  <div class="panel" id="panel-utterai" role="tabpanel" aria-labelledby="tab-utterai">
-    <div class="exp-item"><div class="exp-period">2026.05 – 2026.07<div class="period-links"><a class="ext-link" href="https://github.com/UtterAI-aws13/UtterAI_Infra/tree/eunyoung/infra-lab" target="_blank" rel="noopener noreferrer">GitHub</a><a class="ext-link" href="https://youtu.be/4a5bOTO9fbY" target="_blank" rel="noopener noreferrer">Demo</a><a class="ext-link" href="/projects/utterai/">전체 기술 기록</a></div></div>
-    <div><h3>UtterAI</h3><div class="team">Team Lead / DevOps Engineer · Team Project (4명)</div><div class="tags"><span class="tag">AWS EKS</span><span class="tag">Terraform</span><span class="tag">SQS</span><span class="tag">KEDA</span><span class="tag">Karpenter</span><span class="tag">Argo CD</span><span class="tag">Prometheus</span><span class="tag">Grafana</span><span class="tag">LiteLLM</span></div><p class="desc">치료 세션 녹음에서 전사문·언어지표를 분석하고 SOAP 형식의 치료 기록 초안을 생성하는 AI 기반 언어치료 임상 어시스턴트입니다.<br>팀 리드로 일정·업무 분장과 기술적 의사결정을 주도하고, EKS 인프라와 배포·운영 자동화를 담당했습니다.</p><p class="award-note">AWS Cloud School 최종 프로젝트 최우수상</p><div class="stats"><div><strong>약 58% ↓</strong><span>EC2 Compute 일비용</span></div><div><strong>33초</strong><span>롤백 merge 후 복구 확인</span></div></div></div></div>
-    <div class="blocks">
-      <div class="arch block"><div class="block-head"><div class="label">인프라 · 오토스케일링</div><h4>작업량에 맞춰 확장하고, 기본 용량은 보호합니다</h4></div><figure><button class="image-button" type="button" data-enlarge aria-label="UtterAI 오토스케일링 구성도 확대"><img src="/assets/autoscaling.png" width="2764" height="1684" alt="SQS 기반 KEDA 스케일링과 Base·Burst 배치, Karpenter Node 공급 흐름" loading="lazy"></button></figure><div class="caption"><p>EKS 기반 비동기 AI 파이프라인에서 확장·배치·Node 공급의 역할을 나눴습니다.</p><dl><div><dt>확장</dt><dd>KEDA가 SQS visible·in-flight 메시지를 합산해 Worker별 Pod 수를 조정합니다.</dd></div><div><dt>배치</dt><dd>Mutating Webhook으로 기본 용량은 On-Demand에, 추가 용량은 Spot 우선으로 배치합니다.</dd></div><div><dt>공급</dt><dd>Karpenter가 Pending Pod의 CPU·GPU 요구사항에 맞는 Node를 공급합니다.</dd></div><div><dt>배포</dt><dd>Terraform·GitHub Actions·Argo CD로 인프라와 dev/prod GitOps 배포를 구성했습니다.</dd></div></dl></div></div>
-
-      <div class="feature block"><figure class="shot"><button class="image-button" type="button" data-enlarge aria-label="Node·Pod 주소 영역 분리 구성도 확대"><img src="/assets/network-isolation.png" width="1920" height="1080" alt="기존 공유 서브넷에서 Secondary CIDR 기반 Pod 전용 서브넷으로 변경" loading="lazy"></button></figure><div><div class="block-head"><div class="label">네트워크 트러블슈팅</div><div class="title-line"><h4>IP가 남아 있는데도 Pod를 만들 수 없었던 원인을 찾았습니다</h4><a class="detail-link" href="/projects/utterai/#network">상세 기록 ↗</a></div></div><div class="par"><div><h5 class="p">Problem</h5><ul><li>가용 IP가 112개 남았는데도 Pod가 <strong>ContainerCreating</strong> 상태로 정체</li><li>IPAMD 로그에서 <strong>InsufficientCidr</strong> 오류 확인: 서브넷 단편화로 연속 /28 블록 할당 실패</li></ul></div><div><h5 class="a">Action</h5><ul><li>Custom Networking으로 <strong>Node·Pod 주소 영역 분리</strong></li><li>ENIConfig·Karpenter 탐색 대상·보안 그룹을 조정하고 DNS·SQS 연결까지 검증</li></ul></div><div><h5 class="r">Result</h5><ul><li>Pod IP 할당 실패 해소</li><li>AZ당 Pod 주소를 <strong>약 250개 → 약 3.2만 개</strong>로 확장</li></ul></div></div></div></div>
-
-      <div class="feature block"><figure class="shot"><button class="image-button" type="button" data-enlarge aria-label="Worker별 replica 변화 그래프 확대"><img src="/assets/grafana-scaling.png" width="2092" height="1108" alt="Grafana로 확인한 Worker별 목표 replica와 가용 replica 변화" loading="lazy"></button></figure><div><div class="block-head"><div class="label">비용 · 자원 최적화</div><div class="title-line"><h4>실제 작업량에 맞춰 자원을 늘리고 줄였습니다</h4><a class="detail-link" href="/projects/utterai/#scaling">상세 기록 ↗</a></div></div><div class="par"><div><h5 class="p">Problem</h5><ul><li>CPU 기반 HPA가 GPU 부하와 SQS 대기량 증가를 감지하지 못함</li><li>요청이 없어도 GPU·Batch가 상시 실행되어 유휴 비용 발생</li></ul></div><div><h5 class="a">Action</h5><ul><li><strong>SQS Queue Depth 기반 KEDA·Karpenter</strong> 오토스케일링 적용</li><li>Base·Burst 배치 정책과 Spot 중단 대응 구성</li><li>업무 시간에만 GPU 1개를 미리 띄우고 업무 외 시간에는 0개로 축소</li></ul></div><div><h5 class="r">Result</h5><ul><li>EC2 Compute 일비용 <strong>$28.73 → $12.02, 약 58% 절감</strong></li><li>GPU 주간 기본 유지 시간 <strong>168시간 → 57.5시간</strong></li></ul></div></div></div></div>
-
-      <div class="feature block"><figure class="shot"><button class="image-button" type="button" data-enlarge aria-label="Slack ChatOps 장애 대응 구조 확대"><img src="/assets/chatops.png" width="1082" height="602" alt="Slack·SQS·LiteLLM과 GitHub·Argo CD를 연결한 장애 조사 및 승인형 복구 흐름" loading="lazy"></button></figure><div><div class="block-head"><div class="label">운영 자동화 · ChatOps</div><div class="title-line"><h4>장애 조사와 승인형 복구 검증을 Slack으로 연결했습니다</h4><a class="detail-link" href="/projects/utterai/#chatops">상세 기록 ↗</a></div></div><div class="par"><div><h5 class="p">Problem</h5><ul><li>원인 조사 시 큐·Pod 이벤트·배포 이력을 따로 확인</li><li>Slack 요청 재전달로 LLM 호출과 답글이 중복될 가능성</li></ul></div><div><h5 class="a">Action</h5><ul><li>원인 배포 커밋 식별 → 롤백 PR 제안 → 운영자 승인·merge → 새 이미지 Pod 검증으로 연결</li><li>SQS·DynamoDB로 비동기 처리와 중복 방지 구성</li></ul></div><div><h5 class="r">Result</h5><ul><li>알림 후 <strong>6초 이내</strong> 원인 배포 커밋 표시</li><li>롤백 merge 후 <strong>33초 만에</strong> 복구 여부 확인</li><li>같은 요청 3회 재전달에도 모델 호출·답글은 1회 실행</li></ul></div></div></div></div>
-    </div>
-  </div>
-
-  <div class="panel" id="panel-migration" role="tabpanel" aria-labelledby="tab-migration">
-    <div class="exp-item"><div class="exp-period">2026.09 – 2026.10<div class="period-links"><a class="ext-link" href="https://github.com/2026-Softbank-hackathon" target="_blank" rel="noopener noreferrer">GitHub</a><a class="ext-link" href="https://youtu.be/Ed6JODQt9sQ" target="_blank" rel="noopener noreferrer">Demo</a><a class="ext-link" href="/projects/migration/">전체 기술 기록</a></div></div><div><h3>코로의 이사</h3><div class="team">Cloud Engineer · Team Project (6명)</div><div class="tags"><span class="tag">Terraform</span><span class="tag">ECS Fargate</span><span class="tag">ECR</span><span class="tag">Cloudflare</span><span class="tag">SOPS</span><span class="tag">Docker</span></div><p class="desc">클라우드 ↔ 온프레미스 간 애플리케이션 이식 자동화 플랫폼입니다.<br>Terraform 기반 인프라 프로비저닝과 배포 최적화, Agent용 단기 인증 API와 고정 URL 기반 전환 검증을 담당했습니다.</p><div class="stats"><div><strong>약 72% ↓</strong><span>이미지 갱신 배포 시간</span></div></div></div></div>
-    <div class="blocks">
-      <div class="feature block no-img"><div><div class="block-head"><div class="label">배포 최적화</div><div class="title-line"><h4>이미지 갱신에 필요한 실행 경로를 줄였습니다</h4><a class="detail-link" href="/projects/migration/#optimization">상세 기록 ↗</a></div></div><div class="par"><div><h5 class="p">Problem</h5><ul><li>이미지 갱신 배포 과정에서 반복되는 Terraform 준비·검증 작업</li></ul></div><div><h5 class="a">Action</h5><ul><li>Terraform 작업 폴더 재사용</li><li>중복 초기화·검증을 생략하도록 배포 실행 경로 최적화</li></ul></div><div><h5 class="r">Result</h5><ul><li><strong>이미지 갱신 배포 시간 약 72% 단축</strong></li></ul></div></div></div></div>
-      <div class="feature block no-img"><div><div class="block-head"><div class="label">인증 · 보안</div><h4>Agent에 장기 AWS 키를 전달하지 않도록 구성했습니다</h4></div><ul class="plain"><li>Terraform 프로비저닝에 <strong>SOPS 기반 Zero-Secret 패턴</strong> 적용</li><li>Agent의 <strong>Job 소유권과 lease</strong>를 검증하는 ECR 단기 인증 API 구현</li></ul></div></div>
-      <div class="feature block no-img"><div><div class="block-head"><div class="label">환경 전환 · 검증</div><h4>같은 URL에서 의도한 환경으로 전환됐는지 확인했습니다</h4></div><ul class="plain"><li>Cloudflare Origin 연동으로 <strong>고정 URL 기반 AWS ↔ On-Prem 전환</strong> 구현</li><li>서비스 응답·이미지 digest·실행 호스트를 대조해 배포 결과 검증</li></ul></div></div>
-    </div>
-  </div>
-
-  <div class="panel" id="panel-disasterkok" role="tabpanel" aria-labelledby="tab-disasterkok">
-    <div class="exp-item"><div class="exp-period">2023.08 – 2024.07<br>2026.03 – 2026.09<div class="period-links"><a class="ext-link" href="https://github.com/gpffh20/Disasterkok" target="_blank" rel="noopener noreferrer">GitHub</a><a class="ext-link" href="https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11862329" target="_blank" rel="noopener noreferrer">Paper</a><a class="ext-link" href="/projects/disasterkok/">전체 기술 기록</a></div></div><div><h3>재난콕</h3><div class="team">Backend / Infra · Team Project (6명) → 개인 고도화</div><div class="tags"><span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Celery</span><span class="tag">ECS Fargate</span><span class="tag">Terraform</span><span class="tag">GitHub Actions</span></div><p class="desc">사용자 제보를 기반으로 지역별 재난 정보를 공유하는 플랫폼입니다.<br>초기 팀 프로젝트 이후 개인 고도화 과정에서 성능 병목과 컴퓨트 아키텍처·배포 방식을 개선했습니다.</p><p class="award-note">KCC 학부생·주니어 논문 경진대회 장려상</p><div class="stats"><div><strong>75% ↓</strong><span>부하 테스트 기준 p95 지연시간</span></div></div></div></div>
-    <div class="blocks">
-      <div class="feature block no-img"><div><div class="block-head"><div class="label">성능 개선</div><div class="title-line"><h4>부하 테스트로 병목을 찾고 캐시·비동기 처리를 적용했습니다</h4><a class="detail-link" href="/projects/disasterkok/#performance">상세 기록 ↗</a></div></div><div class="par"><div><h5 class="p">Problem</h5><ul><li>부하 테스트에서 병목 구간 식별</li></ul></div><div><h5 class="a">Action</h5><ul><li><strong>Redis 캐싱과 Celery 비동기 큐</strong> 적용</li></ul></div><div><h5 class="r">Result</h5><ul><li>부하 테스트 기준 <strong>p95 지연시간 75% 단축</strong></li></ul></div></div></div></div>
-      <div class="feature block no-img"><div><div class="block-head"><div class="label">인프라 전환</div><h4>단일 노드의 자원 제약을 분석하고 실행 환경을 전환했습니다</h4></div><ul class="plain"><li>메모리·I/O 지표로 <strong>단일 노드 k3s의 자원 제약</strong> 분석</li><li><strong>ECS Fargate</strong>로 컴퓨트 아키텍처 전환</li></ul></div></div>
-      <div class="feature block no-img"><div><div class="block-head"><div class="label">배포 자동화</div><h4>인프라 코드화와 무중단 배포를 구성했습니다</h4></div><ul class="plain"><li><strong>Terraform</strong> 기반 인프라 코드화</li><li><strong>GitHub Actions(OIDC)</strong> 기반 무중단 배포 자동화</li></ul></div></div>
-    </div>
-  </div>
+<section class="document-section" id="architecture">
+  <div class="section-heading"><p class="eyebrow">SYSTEM ARCHITECTURE</p><h2>비동기 처리와 운영 흐름</h2></div>
+  <p>단계별 SQS 큐와 CPU·GPU Worker로 AI 처리 파이프라인을 구성했습니다. 작업량에 따른 Pod 확장, 워크로드 배치, Node 공급을 분리하고 GitOps와 ChatOps를 연결했습니다.</p>
+  {{ARCHITECTURE}}
+  <dl class="architecture-notes"><div><dt>처리</dt><dd>SQS로 전처리·GPU 추론·리포트 생성 단계를 나누고 CPU·GPU Worker가 작업을 처리합니다.</dd></div><div><dt>확장</dt><dd>KEDA가 작업량에 따라 Pod 수를 정하고, 배치 정책과 Karpenter가 실행 위치와 Node 공급을 담당합니다.</dd></div><div><dt>배포·관측</dt><dd>GitHub Actions·Terraform·Argo CD를 배포 흐름에 연결하고, 지표·이벤트와 ChatOps로 운영 상태를 확인합니다.</dd></div></dl>
 </section>
 
-<section id="education"><h2>Education</h2>
-  <div class="exp-item"><div class="exp-period">2019.03 – 2024.08</div><div><h3>국민대학교</h3><div class="team">행정학 전공 · 소프트웨어학 부전공 · 졸업</div></div></div>
-  <div class="exp-item"><div class="exp-period">2025.12 – 2026.07</div><div><h3>AWS Cloud School</h3><div class="team">AWS Korea × RAPA</div><p class="desc">AWS 3-Tier 환경과 접근 제어 구성 실습. GNS3 기반 라우팅·NAT·방화벽·VPN 구성과 통신 장애 분석 실습.</p></div></div>
-  <div class="exp-item"><div class="exp-period">2023.03 – 2024.08</div><div><h3>42 Seoul</h3><div class="team">Ecole 42 글로벌 캠퍼스</div><p class="desc">C 기반 Shell·HTTP 서버 구현. 500회 이상 피어 코드 리뷰를 통한 구현 검증과 기술적 판단 교환.</p></div></div>
-  <div class="minor"><h4>Certifications</h4><ul><li>AWS Certified Solutions Architect – Associate · 2026.10 취득</li><li>정보처리기사 · 2024.06 취득</li></ul></div>
-  <div class="minor"><h4>Activities</h4><p class="activity-title">오픈소스 컨트리뷰션 아카데미 (OSSCA) · 2026.07 – 2026.10</p><ul><li>Kubernetes Controller·OpenStack Nova 공식 문서 국제화(i18n) 기여</li><li>리소스 reconciliation·compute provisioning 관련 기술 문서 번역 및 리뷰</li></ul></div>
+<section class="case-index" id="cases" aria-labelledby="cases-title">
+  <p class="eyebrow">ENGINEERING CASES</p><h2 id="cases-title">문제 해결 기록</h2>
+  <a href="#network"><span class="case-index-number">01</span><span><strong>IP가 남아 있는데도 Pod를 만들 수 없었던 이유</strong><small>IPAMD 로그 → 원인 규명 → 주소 영역 분리 → 연결 검증</small></span><span aria-hidden="true">↓</span></a>
+  <a href="#scaling"><span class="case-index-number">02</span><span><strong>작업량에 맞춘 오토스케일링과 비용 최적화</strong><small>확장 지표 변경 → Base·Burst 배치 → 유휴 비용·Spot 대응</small></span><span aria-hidden="true">↓</span></a>
+  <a href="#chatops"><span class="case-index-number">03</span><span><strong>장애 조사부터 승인형 복구 검증까지</strong><small>원인 배포 식별 → 운영자 승인 → 새 이미지 Pod 검증</small></span><span aria-hidden="true">↓</span></a>
 </section>
 
-<section id="skills"><h2>Skills</h2><dl class="skills">
-  <div class="skill-row"><dt>Cloud / Infra</dt><dd>AWS · EKS · ECS Fargate · EC2 · VPC · SQS · Terraform · Docker · Kubernetes</dd></div>
-  <div class="skill-row"><dt>Delivery / Ops</dt><dd>GitHub Actions · Argo CD · KEDA · Karpenter · Prometheus · Grafana · Slack ChatOps</dd></div>
-  <div class="skill-row"><dt>Backend / Data</dt><dd>Python · Django · Flask · C / C++ · PostgreSQL · Redis · Celery</dd></div>
-  <div class="skill-row"><dt>Security / AI</dt><dd>IAM · OIDC · SOPS · Cloudflare · Amazon Bedrock · Strands Agents · LiteLLM</dd></div>
-</dl></section>
+{{CASE_STUDIES}}
+
+<section class="document-section" id="delivery">
+  <div class="section-heading"><p class="eyebrow">ADDITIONAL CONTRIBUTIONS</p><h2>배포와 협업</h2></div>
+  <ul><li><strong>App of Apps·Argo CD</strong> 기반 dev/prod GitOps 배포를 구성하고 KEDA와의 replica 관리 충돌을 해결했습니다.</li><li><strong>Amazon Bedrock·Strands Agents</strong> 기반 5-Agent 임상 리포트 생성 파이프라인을 구축했습니다.</li><li>팀 리드로 업무 분장·일일 회의·일정을 관리하고, 진행 지연 원인 해결과 기술적 의사결정을 지원했습니다.</li></ul>
+</section>
+
+<section class="document-section resources" id="resources">
+  <div class="section-heading"><p class="eyebrow">SOURCE & MATERIALS</p><h2>자료와 구현 기록</h2></div>
+  <a class="resource-row" href="https://github.com/UtterAI-aws13/UtterAI_Infra/tree/eunyoung/infra-lab" target="_blank" rel="noopener noreferrer"><span><strong>GitHub</strong><small>인프라 구성·운영 자동화·관련 검증 기록</small></span><span aria-hidden="true">↗</span></a>
+  <a class="resource-row" href="https://youtu.be/4a5bOTO9fbY" target="_blank" rel="noopener noreferrer"><span><strong>서비스 데모</strong><small>UtterAI 서비스 소개 영상</small></span><span aria-hidden="true">↗</span></a>
+  <a class="resource-row" href="/assets/eunice-shin-portfolio.pdf" download="신은영_UtterAI_포트폴리오.pdf"><span><strong>포트폴리오 PDF</strong><small>전체 구성도와 문제 해결 사례를 담은 원본 문서</small></span><span aria-hidden="true">↓</span></a>
+</section>

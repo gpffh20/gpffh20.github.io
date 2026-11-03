@@ -1,8 +1,10 @@
 from pathlib import Path
 from html import escape
 import struct
+import hashlib
 
 DIST = Path(__file__).parent
+CSS_VERSION = hashlib.sha256((DIST / 'styles.css').read_bytes()).hexdigest()[:10]
 ORIGIN = 'https://gpffh20.github.io'
 GITHUB = 'https://github.com/gpffh20'
 UTTERAI = 'https://github.com/UtterAI-aws13/UtterAI_Infra/tree/eunyoung/infra-lab'
@@ -38,7 +40,7 @@ def layout(title, description, body, page='', nav=None):
 <title>{escape(title)}</title><meta name="description" content="{escape(description)}">
 <meta name="theme-color" content="#f0f3ed"><meta property="og:type" content="website"><meta property="og:locale" content="ko_KR">
 <meta property="og:title" content="{escape(title)}"><meta property="og:description" content="{escape(description)}"><meta property="og:url" content="{ORIGIN}/{page}">
-<link rel="canonical" href="{ORIGIN}/{page}"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="preload" href="/assets/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/styles.css"><script src="/site.js" defer></script></head>
+<link rel="canonical" href="{ORIGIN}/{page}"><link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="preload" href="/assets/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/styles.css?v={CSS_VERSION}"><script src="/site.js" defer></script></head>
 <body><a class="skip" href="#main">본문으로 건너뛰기</a>
 <header class="site-header"><div class="nav-wrap"><a class="brand" href="/" aria-label="신은영 포트폴리오 홈">Eunice Shin<span> · DevOps Engineer</span></a><nav class="main-nav" aria-label="메인 메뉴">{links}</nav></div></header>
 <main class="main {"home" if is_home else "article"}" id="main">{toc}{body}<footer class="footer"><span>© 2026 신은영 · Eunice Shin</span><div><a href="/assets/eunice-shin-resume.pdf" download="신은영_이력서.pdf">이력서 PDF ↓</a><a href="#main">맨 위로 ↑</a></div></footer></main>
